@@ -24,19 +24,22 @@ int main(){
                 c=getchar();
                 if(c=='/'){
                     escapeCom1=!escapeCom1;
+                    putchar(c);
                 }
                 else if(c=='*'){
                     escapeCom2=1;
+                    putchar(c);
                 }
-                ungetc(c,stdin);
+                else ungetc(c,stdin);
                 break;
             case '*':
                 putchar(c);
                 c=getchar();
                 if(c=='/'){
                     escapeCom2=0;
+                    putchar(c);
                 }
-                ungetc(c,stdin);
+                else ungetc(c,stdin);
                 break;
             case '\\':
                 putchar(c);
