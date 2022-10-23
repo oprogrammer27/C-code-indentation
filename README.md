@@ -1,6 +1,6 @@
 # C-code-indentation
 
-Compile with gcc:\n
+Compile with gcc:\n<br>
 gcc algn.c -o algn.out
 
 Use (Indentate file "a.c"):\n
